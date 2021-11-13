@@ -1,0 +1,15 @@
+{
+    "description": "ニコニコ動画ページにて動画部分まで自動的にスクロールする拡張機能",
+    "manifest_version": 2,
+    "name": "AutoElementFocus",
+    "version": "0.1.1",
+    "icons": {
+        "48": "icons/icon48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.nicovideo.jp/watch/sm*"],
+            "js": ["src.js"]
+        }
+    ]
+}
